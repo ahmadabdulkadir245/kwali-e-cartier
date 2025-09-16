@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CARTIER – BY KWALI-E WEBSITE</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Import iceland font -->
+  <link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Iceland', sans-serif;
+      color: #1D1C1C;
+      /* your default text color */
+    }
+  </style>
+
+</head>
+
+
+
+<body class="text-[#1D1C1C]">
+
+  <!-- TOP Bar (responsive) -->
+  <div class="w-full bg-white px-4 lg:px-6 py-4 border-b border-gray-300">
+    <div class="max-w-[1440px] mx-auto flex items-center">
+
+      <!-- LEFT (desktop links / mobile hamburger+search) -->
+      <div class="flex-1 flex items-center justify-start gap-4 text-xs uppercase font-medium">
+        <!-- Desktop links (md+) -->
+        <div class="hidden lg:flex gap-6">
+          <a href="#" class="inline-block relative hover:text-gray-500 focus:outline-none">
+            <span
+              class="relative after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-0 after:bg-gray-500 after:transition-all after:duration-300 hover:after:w-full">
+              United States
+            </span>
+          </a>
+
+          <a href="#" class="inline-block relative hover:text-gray-500 focus:outline-none">
+            <span
+              class="relative after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-0 after:bg-gray-500 after:transition-all after:duration-300 hover:after:w-full">
+              Contact Us
+            </span>
+          </a>
+
+          <a href="#" class="inline-block relative hover:text-gray-500 focus:outline-none">
+            <span
+              class="relative after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-0 after:bg-gray-500 after:transition-all after:duration-300 hover:after:w-full">
+              Services
+            </span>
+          </a>
+        </div>
+
+        <!-- Mobile / md: Hamburger + Search -->
+        <div class="flex lg:hidden items-center">
+          <button id="menu-btn" aria-label="Open menu"
+            class="p-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
+            <i data-lucide="menu" class="w-5 h-5"></i>
+          </button>
+
+          <button id="mobile-search-btn" aria-label="Search"
+            class="p-2 rounded-md hover:bg-gray-100 focus:outline-none">
+            <i data-lucide="search" class="w-5 h-5"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- CENTER (logo) -->
+      <div class="flex-1 flex justify-center">
+        <div class="text-2xl lg:text-4xl font-bold tracking-wide select-none">CARTEIR</div>
+      </div>
+
+      <!-- RIGHT (desktop icons / mobile location+heart) -->
+      <div class="flex-1 flex items-center justify-end gap-3 text-gray-700">
+        <!-- Desktop icons (md+) -->
+        <div class="hidden lg:flex items-center gap-4">
+          <a href="#" class="p-1 hover:text-black" aria-label="Favorites">
+            <i data-lucide="heart" class="w-4 h-4"></i>
+          </a>
+          <a href="#" class="p-1 hover:text-black" aria-label="Account">
+            <i data-lucide="user" class="w-4 h-4"></i>
+          </a>
+          <a href="#" class="p-1 hover:text-black" aria-label="Store location">
+            <i data-lucide="map-pin" class="w-4 h-4"></i>
+          </a>
+          <a href="#" class="p-1 hover:text-black" aria-label="Bag">
+            <i data-lucide="shopping-bag" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- Mobile / md: location + heart -->
+        <div class="flex lg:hidden items-center">
+          <a href="#" class="p-2 rounded-md hover:bg-gray-100" aria-label="Store location">
+            <i data-lucide="map-pin" class="w-5 h-5"></i>
+          </a>
+          <a href="#" class="p-2 rounded-md hover:bg-gray-100" aria-label="Favorites">
+            <i data-lucide="heart" class="w-5 h-5"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="hidden lg:flex justify-center items-center px-4 lg:px-10 py-4">
+
+      <!-- Center: Nav Menu + Search -->
+      <nav class="flex space-x-8 text-sm uppercase items-center">
+        <a href="#" class="hover:text-gray-500">High Jewelry</a>
+        <a href="#" class="hover:text-gray-500">Jewelry</a>
+        <a href="#" class="hover:text-gray-500">Watches</a>
+        <a href="#" class="hover:text-gray-500">Bags & Accessories</a>
+        <a href="#" class="hover:text-gray-500">Fragrances</a>
+        <a href="#" class="hover:text-gray-500">Home & Stationery</a>
+        <a href="#" class="hover:text-gray-500">News</a>
+        <a href="#" class="hover:text-gray-500">La Maison</a>
+
+        <!-- Divider + Search -->
+        <span>|</span>
+        <button class="hover:text-black">
+          <i data-lucide="search" class="w-5 h-5"></i>
+        </button>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!-- BG img -->
+  <div
+    class="relative w-full h-[500px] lg:h-screen scroll-animate opacity-0 translate-y-10 transition-all duration-2000 ease-out">
+    <!-- Background image -->
+    <img src="./img/banner-1.avif" alt="Banner" class="w-full h-full object-cover">
+
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black bg-opacity-70"></div>
+
+    <!-- Content -->
+    <div class="absolute inset-0 flex items-center justify-center">
+      <div class="w-full max-w-6xl flex flex-col lg:flex-row">
+        <!-- Left empty space -->
+        <div class="hidden lg:flex flex-1"></div>
+
+        <!-- Center text block -->
+        <div
+          class="flex-1 flex flex-col items-center justify-center text-center text-white scroll-animate opacity-0 translate-y-10 transition-all duration-4000 ease-out">
+          <h2 class="text-2xl lg:text-4xl font-bold mb-2 uppercase">
+            tank
+          </h2>
+          <p class="mb-4">
+            A watch made for those who appreciate elegance and purity of design.
+          </p>
+          <button
+            class="bg-transparent border border-white rounded-md text-white px-16 py-2 uppercase hover:bg-black hover:text-white transition">
+            Discover The Collection
+          </button>
+        </div>
+
+        <!-- Right empty space -->
+        <div class="hidden lg:flex flex-1"></div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="max-w-[1440px] w-full mx-auto px-2 lg:px-10">
+
+
+    <section
+      class="relative w-full h-[500px] overflow-hidden my-16 scroll-animate opacity-0 translate-y-10 transition-all duration-2000 ease-out">
+      <!-- Background video -->
+      <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover">
+        <source src="./img/vid-1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black/40"></div>
+
+      <!-- Content -->
+      <div
+        class="relative z-10 flex flex-col items-center justify-center text-center h-full px-6 scroll-animate opacity-0 translate-y-10 transition-all duration-2000 ease-out">
+        <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">
+          Create your love bracelet
+        </h1>
+        <p class="text-white text-sm md:text-lg max-w-2xl mb-6">
+          Select every detail of the LOVE bracelet to design a perfect match.
+          An icon of jewelry design since its creation in New York in 1969, LOVE is
+          a symbol that reflects you.
+        </p>
+        <button
+          class="bg-transparent border border-white rounded-md text-white px-16 py-2 uppercase hover:bg-white hover:text-black transition">
+          Start Dressing
+        </button>
+      </div>
+    </section>
+
+
+
+    <!-- A jewelry heroine -->
+    <div
+      class="lg:flex justify-between items-center mt-16 scroll-animate opacity-0 translate-y-10 transition-all duration-1000 ease-out">
+      <!-- Left: Image -->
+      <div class="w-full lg:w-1/2 scroll-animate opacity-0 translate-y-10 transition-all duration-1000 ease-out">
+        <img src="./img/1.webp" alt="Inner Fire" class="h-[500px] w-full object-cover">
+      </div>
+
+      <!-- Right: Content -->
+      <div
+        class="w-full lg:w-1/2 px-6 lg:px-12 py-10 flex flex-col justify-center items-center text-center scroll-animate opacity-0 translate-y-10 transition-all duration-1000 ease-out">
+        <!-- Heading -->
+        <h2 class="text-2xl lg:text-3xl uppercase font-semibold text-gray-900">A jewelry heroine</h2>
+        <!-- Small text -->
+        <p class="text-gray-600 text-lg mt-3 max-w-md">
+          The Panthère takes center stage in Cartier's jewelry narrative as a true muse who inspires a wild, alluring
+          collection.
+        </p>
+
+        <!-- Underlined Button -->
+        <a href="#"
+          class="mt-4 text-lg underline underline-offset-4 decoration-gray-900 hover:decoration-gray-500 hover:text-gray-500 transition">
+          Shop the collection
+        </a>
+      </div>
+    </div>
+
+
+    <!-- Panthère de Cartier watches -->
+    <div class="lg:flex justify-between items-center mb-16">
+      <!-- Left: Content -->
+      <div class="w-full lg:w-1/2 px-6 lg:px-12 py-10 flex flex-col justify-center items-center text-center">
+        <!-- Heading -->
+        <h2 class="text-2xl lg:text-3xl uppercase font-semibold text-gray-900">Panthère de Cartier watches</h2>
+        <!-- Small text -->
+        <p class="text-gray-600 text-lg mt-3 max-w-md">
+          The Cartier Panther wildly magnetizes the watchmaking collections of the Maison.
+        </p>
+
+        <!-- Underlined Button -->
+        <a href="#"
+          class="mt-4 text-lg underline underline-offset-4 decoration-gray-900 hover:decoration-gray-500 hover:text-gray-500 transition">
+          Shop the collection
+        </a>
+      </div>
+
+      <!-- Right: Image with animation -->
+      <div class="w-full lg:w-1/2">
+        <img src="./img/2.avif" alt="Inner Fire"
+          class="h-[500px] w-full object-cover opacity-0 translate-y-10 transition-all duration-700 ease-out scroll-animate">
+      </div>
+    </div>
+
+
+
+    <!-- line divider -->
+    <div class="border-t border-gray-600 my-4 lg:my-8"></div>
+    <section class="flex flex-col md:flex-row gap-8 justify-center items-start p-8">
+      <!-- Card 1 -->
+      <div class="flex-1 text-center scroll-animate opacity-0 translate-y-10 transition-all duration-1000 ease-out">
+        <img src="./img/4.avif" alt="Image 1" class="mx-auto rounded-xl shadow-lg">
+        <h3 class="text-xl font-bold mt-4 uppercase">clash de cart</h3>
+        <p class="text-gray-600 mt-2">This is the description for the first image. Short and clear.</p>
+        <a href="#" class="inline-block mt-4 border-b-2 border-black hover:text-gray-700">shop the collection</a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="flex-1 text-center scroll-animate opacity-0 translate-y-10 transition-all duration-1000 ease-out">
+        <img src="./img/5.avif" alt="Image 2" class="mx-auto rounded-xl shadow-lg">
+        <h3 class="text-xl font-bold mt-4 uppercase">panthere double</h3>
+        <p class="text-gray-600 mt-2">This is the description for the second image. Short and clear.</p>
+        <a href="#" class="inline-block mt-4 border-b-2 border-black hover:text-gray-700">shop the collection</a>
+      </div>
+    </section>
+  </div>
+
+
+
+  <section class="bg-gray-100 my-16 py-16 px-8">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+
+      <!-- Item 1 -->
+      <div
+        class="flex flex-col items-center scroll-animate opacity-0 translate-y-10 transition-all duration-1000 ease-out">
+        <img src="./img/svg-1.svg" alt="Icon 1" class="w-10 h-10 mb-4">
+        <h2 class="text-2xl font-bold uppercase mb-4">complementary delivery</h2>
+      </div>
+
+      <!-- Item 2 -->
+      <div
+        class="flex flex-col items-center scroll-animate opacity-0 translate-y-10 transition-all duration-1000 ease-out">
+        <img src="./img/svg-2.svg" alt="Icon 2" class="w-10 h-10 mb-4">
+        <h2 class="text-2xl font-bold uppercase mb-4">easy return or exchange</h2>
+      </div>
+
+      <!-- Item 3 -->
+      <div
+        class="flex flex-col items-center scroll-animate opacity-0 translate-y-10 transition-all duration-1000 ease-out">
+        <img src="./img/svg-3.svg" alt="Icon 3" class="w-10 h-10 mb-4">
+        <h2 class="text-2xl font-bold uppercase mb-4">free gift wrapping</h2>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- Footer -->
+  <footer class="bg-black text-white mt-[100px]">
+
+    <!-- Find a Cartier Store -->
+    <section class="px-6 lg:px-20 py-16">
+      <div class="lg:flex justify-between items-center">
+
+        <!-- Left Text -->
+        <div class="w-full lg:w-1/2 pr-8 scroll-animate opacity-0 translate-y-10 transition-all duration-1000 ease-out">
+          <h2 class="text-2xl font-semibold">Find a Cartier Store near you</h2>
+          <p class="text-xs text-gray-300 mt-4">
+            Discover our curated selection of watches & jewellery and benefit from exclusive boutique services.
+          </p>
+
+          <!-- Use Your Location Button -->
+          <button
+            class="mt-6 w-full sm:w-auto px-6 py-3 bg-white text-black uppercase text-sm font-medium hover:bg-black hover:text-white border border-white transition">
+            Use Your Location
+          </button>
+
+          <!-- Search Box -->
+          <div class="relative mt-4 w-full sm:w-auto">
+            <i data-lucide="search"
+              class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4"></i>
+            <input type="text" placeholder="CITY OR COUNTRY"
+              class="w-full sm:w-[300px] pl-10 pr-4 py-3 uppercase bg-black border border-gray-600 text-white text-sm placeholder-gray-400 rounded-md focus:outline-none focus:ring-0 focus:border-gray-500" />
+          </div>
+        </div>
+
+        <!-- Right Image -->
+        <div
+          class="w-full lg:w-1/2 mt-10 lg:mt-0 flex justify-center scroll-animate opacity-0 translate-y-10 transition-all duration-1000 ease-out">
+          <img src="./img/store.jfif" alt="Cartier Store" class="h-[70vh] w-full object-cover">
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Join the Community -->
+    <div class="flex flex-col lg:flex-row items-center justify-between px-6 lg:px-20 py-10 border-gray-700">
+      <!-- Left -->
+      <div class="flex items-center space-x-3">
+        <span class="text-4xl font-bold">@</span>
+        <p class="text-xs text-gray-300 max-w-md">
+          Join the community and get the latest on watches, jewellery and exclusive events
+        </p>
+      </div>
+      <!-- Right -->
+      <div class="mt-6 lg:mt-0 w-full lg:w-1/3 flex justify-center">
+        <button
+          class="w-[80%] px-6 py-3 border border-white bg-black text-white uppercase text-sm font-medium hover:bg-white hover:text-black transition">
+          Register Now
+        </button>
+      </div>
+    </div>
+
+    <!-- Footer Links -->
+    <div class="max-w-7xl mx-auto px-6 lg:px-20 py-12 grid grid-cols-2 md:grid-cols-4 gap-8">
+
+      <!-- SERVICE -->
+      <div class="scroll-animate opacity-0 translate-y-10 transition-all duration-1000 ease-out">
+        <h3 class="uppercase text-gray-400 text-sm mb-4">Service</h3>
+        <ul class="space-y-2 text-xs">
+          <li>FAQ</li>
+          <li>Payment</li>
+          <li>Delivery</li>
+          <li>Returns</li>
+          <li>CPO Warranty</li>
+        </ul>
+      </div>
+
+      <!-- ABOUT -->
+      <div class="scroll-animate opacity-0 translate-y-10 transition-all duration-1000 ease-out">
+        <h3 class="uppercase text-gray-400 text-sm mb-4">About</h3>
+        <ul class="space-y-2 text-xs">
+          <li>Values</li>
+          <li>Bucherer World</li>
+          <li>Press</li>
+          <li>Code of Conduct</li>
+          <li>Careers</li>
+          <li>Responsible Sourcing</li>
+        </ul>
+      </div>
+
+      <!-- LEGAL & PRIVACY -->
+      <div class="scroll-animate opacity-0 translate-y-10 transition-all duration-1000 ease-out">
+        <h3 class="uppercase text-gray-400 text-sm mb-4">Legal & Privacy</h3>
+        <ul class="space-y-2 text-xs">
+          <li>Terms & Conditions</li>
+          <li>Terms of Use</li>
+          <li>Privacy Policy</li>
+          <li>Imprint</li>
+          <li>Accessibility Statement</li>
+          <li>Cookie Guidelines</li>
+          <li>Cookie Settings</li>
+          <li>GTC Purchase of Pre-Owned Watches</li>
+        </ul>
+      </div>
+
+      <!-- CUSTOMER SERVICE -->
+      <div class="scroll-animate opacity-0 translate-y-10 transition-all duration-1000 ease-out">
+        <h3 class="uppercase text-gray-400 text-sm mb-4">Customer Service</h3>
+        <ul class="space-y-2 text-xs">
+          <li>Mon - Fri 09:00 - 18:00, Sat 09:00 - 17:00</li>
+          <li>+41 41 369 79 79</li>
+          <li>Contact</li>
+          <li>Appointments</li>
+          <li>Whatsapp</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Socials & Language Row -->
+    <div
+      class="max-w-7xl mx-auto px-6 lg:px-20 flex flex-col md:flex-row justify-between items-center text-xs space-y-4 md:space-y-0 scroll-animate opacity-0 translate-y-10 transition-all duration-1000 ease-out">
+
+      <!-- Language -->
+      <div class="flex items-center space-x-2">
+        <span class="text-lg">🌐</span>
+        <span>ENGLISH / SWITZERLAND</span>
+      </div>
+
+      <!-- Social Icons (Lucide) -->
+      <div class="flex space-x-5 text-lg">
+        <button aria-label="Facebook" class="text-gray-400 hover:text-white transition">
+          <i data-lucide="facebook" class="w-5 h-5"></i>
+        </button>
+
+        <button aria-label="Instagram" class="text-gray-400 hover:text-white transition">
+          <i data-lucide="instagram" class="w-5 h-5"></i>
+        </button>
+
+        <button aria-label="LinkedIn" class="text-gray-400 hover:text-white transition">
+          <i data-lucide="linkedin" class="w-5 h-5"></i>
+        </button>
+
+        <button aria-label="YouTube" class="text-gray-400 hover:text-white transition">
+          <i data-lucide="youtube" class="w-5 h-5"></i>
+        </button>
+
+        <button aria-label="Pinterest" class="text-gray-400 hover:text-white transition">
+          <i data-lucide="pinterest" class="w-5 h-5"></i>
+        </button>
+
+        <button aria-label="WhatsApp" class="text-gray-400 hover:text-white transition">
+          <i data-lucide="whatsapp" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- Copyright -->
+      <div>
+        © 2025
+      </div>
+    </div>
+
+    <!-- Trademark with Gradient & Build Day -->
+    <div class="border-t border-gray-700 mt-6">
+      <p class="mx-auto max-w-fit py-6 text-xs lg:text-lg uppercase tracking-widest text-center">
+        <span class="text-gray-700 "> Crafted by</span>
+        <span class=" ml-2 bg-clip-text text-transparent bg-gradient-to-r from-gray-700 via-red-600 to-yellow-500
+              font-semibold">
+          KWALI-E WEBSITE
+        </span>
+        <span class="text-gray-500 ml-2">© 2025 · Build Day 5</span>
+      </p>
+    </div>
+
+  </footer>
+
+  <!-- Lucide -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Render icons first
+      lucide.createIcons();
+    });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const elements = document.querySelectorAll(".scroll-animate");
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.remove("opacity-0", "translate-y-10");
+            entry.target.classList.add("opacity-100", "translate-y-0", "transition-all", "duration-[2000ms]", "ease-out");
+          }
+        });
+      }, { threshold: 0.2 });
+
+      elements.forEach(el => observer.observe(el));
+    });
+  </script>
+
+
+
+
+</body>
+
+</html>
